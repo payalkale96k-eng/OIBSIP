@@ -1,0 +1,18 @@
+SkillNest – Assets Folder
+==========================
+
+This project does not depend on any external image files. All visuals
+(the hero illustration, icons, and avatars) are built using pure CSS
+and emoji characters, so the site works immediately with no missing
+image errors.
+
+If you'd like to add your own images later (e.g. a logo image, team
+photos, or custom icons), place them in this folder and reference them
+from index.html like this:
+
+  <img src="assets/your-image.png" alt="Describe the image here">
+
+Recommended additions if you extend this project:
+  - logo.png       (SkillNest logo, if you don't want to use the CSS logo mark)
+  - favicon.ico     (browser tab icon — link it in <head> with a <link rel="icon"> tag)
+  - og-image.png    (social media preview image)

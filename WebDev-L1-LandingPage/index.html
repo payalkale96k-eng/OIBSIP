@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkillNest – Learn. Build. Grow.</title>
+  <meta name="description" content="SkillNest is a modern learning platform for college students to learn programming, build real projects, and prepare for their careers.">
+
+  <!-- Google Fonts (site remains fully functional if this fails to load) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ HEADER / NAVIGATION ============ -->
+  <header class="site-header">
+    <nav class="navbar" aria-label="Primary navigation">
+      <a href="#home" class="logo">
+        <span class="logo-mark" aria-hidden="true">SN</span>
+        <span class="logo-text">SkillNest</span>
+      </a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <a href="#contact" class="btn btn-primary nav-cta">Get Started</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ============ HERO SECTION ============ -->
+    <section id="home" class="hero">
+      <div class="hero-inner">
+        <div class="hero-content">
+          <p class="badge">Level up your skills</p>
+          <h1 class="hero-title">Learn Skills. Build Projects. Shape Your Future.</h1>
+          <p class="hero-subtitle">
+            SkillNest is a learning platform built for college students who want to move past
+            theory. Pick a track, practice with real challenges, ship projects worth showing,
+            and walk into interviews with proof of what you can do.
+          </p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">Get Started</a>
+            <a href="#features" class="btn btn-secondary">Explore Features</a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="code-card">
+            <div class="code-card-header">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+              <span class="code-card-title">learning-path.js</span>
+            </div>
+            <div class="code-card-body">
+              <p><span class="code-key">const</span> <span class="code-var">path</span> = {</p>
+              <p class="code-indent"><span class="code-prop">skill</span>: <span class="code-string">"Web Development"</span>,</p>
+              <p class="code-indent"><span class="code-prop">progress</span>: <span class="code-number">72</span>,</p>
+              <p class="code-indent"><span class="code-prop">projects</span>: <span class="code-number">3</span>,</p>
+              <p class="code-indent"><span class="code-prop">status</span>: <span class="code-string">"in progress"</span></p>
+              <p>};</p>
+            </div>
+            <div class="code-card-footer">
+              <div class="progress-track">
+                <div class="progress-fill"></div>
+              </div>
+              <span class="progress-label">72% complete</span>
+            </div>
+          </div>
+
+          <div class="floating-chip chip-one">
+            <span class="chip-icon">🎯</span>
+            <span>Project shipped</span>
+          </div>
+          <div class="floating-chip chip-two">
+            <span class="chip-icon">🔥</span>
+            <span>12-day streak</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FEATURES SECTION ============ -->
+    <section id="features" class="features">
+      <div class="section-inner">
+        <h2 class="section-title">Everything you need in one place</h2>
+        <p class="section-subtitle">
+          SkillNest brings together learning, practice, and proof of work so you're not
+          piecing your growth together from ten different tabs.
+        </p>
+
+        <div class="features-grid">
+          <article class="feature-card">
+            <div class="feature-icon">💻</div>
+            <h3>Learn Programming</h3>
+            <p>Structured lessons in web development, Python, and core CS fundamentals, written for absolute beginners.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon">🛠️</div>
+            <h3>Build Real Projects</h3>
+            <p>Every module ends with a project you actually keep — something you can put in a portfolio or resume.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon">📈</div>
+            <h3>Track Your Progress</h3>
+            <p>See exactly how far you've come with clear milestones instead of a vague sense of "I've been studying."</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon">🎓</div>
+            <h3>Career Preparation</h3>
+            <p>Resume tips, interview practice, and guidance on turning coursework into a story recruiters remember.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon">🧩</div>
+            <h3>Practice &amp; Challenges</h3>
+            <p>Short, focused coding challenges that reinforce what you just learned before it slips away.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon">🗺️</div>
+            <h3>Skill Roadmaps</h3>
+            <p>Clear, ordered paths for each track so you always know what to learn next and why it matters.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT SECTION ============ -->
+    <section id="about" class="about">
+      <div class="section-inner about-grid">
+        <div class="about-text">
+          <h2 class="section-title">Built for students who learn by doing</h2>
+          <p>
+            SkillNest started as a simple idea: most students don't struggle because they lack
+            resources — they struggle because those resources are scattered, generic, or too
+            advanced to start with. We built a single place where a beginner can start from
+            zero and end up with real, working projects.
+          </p>
+          <p>
+            Every track on SkillNest is designed around practice first. You read a little,
+            build a lot, and get immediate feedback on where you stand. That's what makes it
+            useful whether you're writing your first "Hello, World!" or preparing for
+            placement season.
+          </p>
+        </div>
+
+        <div class="about-stats">
+          <div class="stat-card">
+            <span class="stat-number">10K+</span>
+            <span class="stat-label">Students</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">50+</span>
+            <span class="stat-label">Courses</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">100+</span>
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">24/7</span>
+            <span class="stat-label">Learning</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HOW IT WORKS SECTION ============ -->
+    <section id="how-it-works" class="how-it-works">
+      <div class="section-inner">
+        <h2 class="section-title">Your path, in four steps</h2>
+        <p class="section-subtitle">A simple, repeatable process that takes you from curious to capable.</p>
+
+        <ol class="steps">
+          <li class="step-card">
+            <span class="step-number">01</span>
+            <h3>Choose Your Skill</h3>
+            <p>Pick a track — web development, Python, or core programming fundamentals.</p>
+          </li>
+          <li class="step-card">
+            <span class="step-number">02</span>
+            <h3>Learn &amp; Practice</h3>
+            <p>Work through bite-sized lessons paired with hands-on coding challenges.</p>
+          </li>
+          <li class="step-card">
+            <span class="step-number">03</span>
+            <h3>Build Projects</h3>
+            <p>Apply what you've learned to real projects you can show off later.</p>
+          </li>
+          <li class="step-card">
+            <span class="step-number">04</span>
+            <h3>Grow Your Career</h3>
+            <p>Turn your progress and projects into a resume and portfolio that stands out.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIALS SECTION ============ -->
+    <section id="testimonials" class="testimonials">
+      <div class="section-inner">
+        <h2 class="section-title">What students are saying</h2>
+
+        <div class="testimonials-grid">
+          <figure class="testimonial-card">
+            <blockquote>
+              "SkillNest helped me understand web development and gave me the confidence to
+              build my first project from scratch."
+            </blockquote>
+            <figcaption>
+              <span class="avatar" aria-hidden="true">👩‍💻</span>
+              <div>
+                <span class="testimonial-name">Ananya Sharma</span>
+                <span class="testimonial-role">Second-Year, CSE</span>
+              </div>
+            </figcaption>
+          </figure>
+
+          <figure class="testimonial-card">
+            <blockquote>
+              "The roadmaps made it obvious what to learn next. I stopped jumping between
+              random tutorials and actually finished something."
+            </blockquote>
+            <figcaption>
+              <span class="avatar" aria-hidden="true">🧑‍💻</span>
+              <div>
+                <span class="testimonial-name">Rohan Mehta</span>
+                <span class="testimonial-role">Third-Year, IT</span>
+              </div>
+            </figcaption>
+          </figure>
+
+          <figure class="testimonial-card">
+            <blockquote>
+              "I used the practice challenges every night before my placement interviews.
+              It genuinely made a difference."
+            </blockquote>
+            <figcaption>
+              <span class="avatar" aria-hidden="true">👨‍🎓</span>
+              <div>
+                <span class="testimonial-name">Karan Verma</span>
+                <span class="testimonial-role">Final-Year, ECE</span>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CALL TO ACTION SECTION ============ -->
+    <section class="cta">
+      <div class="section-inner cta-inner">
+        <h2>Ready to Build Your Future?</h2>
+        <p>Start learning, build real projects, and take the next step toward your career.</p>
+        <a href="#features" class="btn btn-light">Start Learning Today</a>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT SECTION ============ -->
+    <section id="contact" class="contact">
+      <div class="section-inner contact-grid">
+        <div class="contact-info">
+          <h2 class="section-title">Get in touch</h2>
+          <p class="section-subtitle" style="margin-bottom: 1.5rem;">
+            Questions about a course or track? Reach out — we're happy to help.
+          </p>
+
+          <ul class="contact-list">
+            <li><span aria-hidden="true">📧</span> hello@skillnest.example</li>
+            <li><span aria-hidden="true">📞</span> +91 00000 00000</li>
+            <li><span aria-hidden="true">📍</span> Pune, Maharashtra, India</li>
+          </ul>
+
+          <div class="social-links">
+            <a href="#" aria-label="SkillNest on Twitter">Twitter</a>
+            <a href="#" aria-label="SkillNest on LinkedIn">LinkedIn</a>
+            <a href="#" aria-label="SkillNest on Instagram">Instagram</a>
+            <a href="#" aria-label="SkillNest on GitHub">GitHub</a>
+          </div>
+        </div>
+
+        <form class="contact-form" action="#" method="post">
+          <p class="form-note">Demo form — no data is submitted or stored.</p>
+
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="How can we help?" required></textarea>
+
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="section-inner footer-grid">
+      <div class="footer-brand">
+        <a href="#home" class="logo">
+          <span class="logo-mark" aria-hidden="true">SN</span>
+          <span class="logo-text">SkillNest</span>
+        </a>
+        <p>A learning platform helping college students build skills, ship projects, and grow their careers.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#how-it-works">How It Works</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <ul>
+          <li>hello@skillnest.example</li>
+          <li>+91 00000 00000</li>
+          <li>Pune, Maharashtra, India</li>
+        </ul>
+        <div class="social-links">
+          <a href="#" aria-label="SkillNest on Twitter">Twitter</a>
+          <a href="#" aria-label="SkillNest on LinkedIn">LinkedIn</a>
+          <a href="#" aria-label="SkillNest on Instagram">Instagram</a>
+        </div>
+      </div>
+    </div>
+
+    <p class="copyright">© 2026 SkillNest. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
