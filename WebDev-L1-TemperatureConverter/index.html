@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Temperature Converter | Payal Kale</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <section class="converter-card">
+
+            <div class="icon">🌡️</div>
+
+            <h1>Temperature Converter</h1>
+
+            <p class="subtitle">
+                Convert temperatures quickly and accurately
+            </p>
+
+            <div class="input-group">
+
+                <label for="temperature">
+                    Enter Temperature
+                </label>
+
+                <input
+                    type="number"
+                    id="temperature"
+                    placeholder="Enter value"
+                    step="any"
+                >
+
+            </div>
+
+            <div class="input-group">
+
+                <label for="unit">
+                    Select Unit
+                </label>
+
+                <select id="unit">
+
+                    <option value="celsius">
+                        Celsius (°C)
+                    </option>
+
+                    <option value="fahrenheit">
+                        Fahrenheit (°F)
+                    </option>
+
+                    <option value="kelvin">
+                        Kelvin (K)
+                    </option>
+
+                </select>
+
+            </div>
+
+            <button id="convertBtn">
+                Convert Temperature
+            </button>
+
+            <p id="errorMessage" class="error"></p>
+
+            <div class="results">
+
+                <h2>Conversion Results</h2>
+
+                <div class="result-grid">
+
+                    <div class="result-box">
+                        <span>Celsius</span>
+                        <strong id="celsiusResult">--</strong>
+                    </div>
+
+                    <div class="result-box">
+                        <span>Fahrenheit</span>
+                        <strong id="fahrenheitResult">--</strong>
+                    </div>
+
+                    <div class="result-box">
+                        <span>Kelvin</span>
+                        <strong id="kelvinResult">--</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <footer>
+            <p>Created by Payal Kale | OIBSIP Task 3</p>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
